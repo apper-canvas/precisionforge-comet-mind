@@ -237,6 +237,163 @@ const Capabilities = () => {
             ))}
           </div>
         </div>
+</section>
+
+      {/* Manufacturing Process Timeline */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+              Manufacturing Process Timeline
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From raw materials to finished products - our comprehensive manufacturing journey
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 relative">
+            {/* Timeline connecting line for larger screens */}
+            <div className="hidden xl:block absolute top-24 left-0 right-0 h-0.5 bg-accent/20 z-0"></div>
+            
+            {[
+              {
+                stage: "Raw Materials",
+                icon: "Package",
+                description: "Premium materials sourced from certified suppliers",
+                color: "from-blue-500 to-blue-600"
+              },
+              {
+                stage: "Machining",
+                icon: "Cogs",
+                description: "Precision CNC machining to exact specifications",
+                color: "from-green-500 to-green-600"
+              },
+              {
+                stage: "Fabrication",
+                icon: "Hammer",
+                description: "Expert fabrication using advanced techniques",
+                color: "from-purple-500 to-purple-600"
+              },
+              {
+                stage: "Quality Control",
+                icon: "TestTube",
+                description: "Rigorous testing and inspection protocols",
+                color: "from-orange-500 to-orange-600"
+              },
+              {
+                stage: "Assembly",
+                icon: "CheckCircle",
+                description: "Final assembly and comprehensive testing",
+                color: "from-teal-500 to-teal-600"
+              },
+              {
+                stage: "Delivery",
+                icon: "Truck",
+                description: "Secure packaging and on-time delivery",
+                color: "from-red-500 to-red-600"
+              }
+            ].map((process, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative z-10"
+              >
+                <Card hover className="h-full text-center relative overflow-hidden">
+                  {/* Timeline number */}
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-bold text-accent">{index + 1}</span>
+                  </div>
+                  
+                  {/* Icon with gradient background */}
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                    className={`w-20 h-20 bg-gradient-to-br ${process.color} rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg`}
+                  >
+                    <ApperIcon name={process.icon} size={32} className="text-white" />
+                  </motion.div>
+                  
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {process.stage}
+                  </h3>
+                  
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {process.description}
+                  </p>
+                  
+                  {/* Progress indicator */}
+                  <div className="mt-4 flex justify-center">
+                    <div className="flex space-x-1">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div
+                          key={i}
+                          className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                            i <= index ? 'bg-accent' : 'bg-gray-200'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </Card>
+                
+                {/* Connecting arrow for larger screens */}
+                {index < 5 && (
+                  <div className="hidden xl:block absolute top-24 -right-3 z-20">
+                    <ApperIcon name="ChevronRight" size={16} className="text-accent/60" />
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+          
+          {/* Additional process info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="mt-16 text-center"
+          >
+            <div className="bg-surface-50 rounded-xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-xl font-semibold text-primary mb-4">
+                End-to-End Manufacturing Excellence
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our streamlined process ensures consistent quality, on-time delivery, and complete traceability 
+                throughout every stage of manufacturing. From initial material inspection to final packaging, 
+                each step is carefully monitored and documented to meet the highest industry standards.
+              </p>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent mb-1">100%</div>
+                  <div className="text-sm text-gray-600">Quality Inspected</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent mb-1">24/7</div>
+                  <div className="text-sm text-gray-600">Process Monitoring</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent mb-1">±0.0001"</div>
+                  <div className="text-sm text-gray-600">Precision Tolerance</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-accent mb-1">ISO 9001</div>
+                  <div className="text-sm text-gray-600">Certified Process</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Equipment Gallery */}
