@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "customerInfo": {
+      "name": "John Smith",
+      "email": "john.smith@company.com",
+      "phone": "+1-555-0123",
+      "company": "Advanced Systems Inc"
+    },
+    "products": [
+      {
+        "productId": 1,
+        "quantity": 500,
+        "specifications": "Custom modifications required for mounting holes"
+      }
+    ],
+    "specifications": "Need parts for automotive application with specific anodizing requirements",
+    "timeline": "6 weeks",
+    "quantity": 500,
+    "timestamp": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "customerInfo": {
+      "name": "Sarah Johnson",
+      "email": "s.johnson@aerospace.com",
+      "phone": "+1-555-0456",
+      "company": "Aerospace Solutions Ltd"
+    },
+    "products": [
+      {
+        "productId": 3,
+        "quantity": 1000,
+        "specifications": "High-temp resistant material required"
+      }
+    ],
+    "specifications": "Aerospace grade components for critical flight systems",
+    "timeline": "12 weeks",
+    "quantity": 1000,
+    "timestamp": "2024-01-14T14:20:00Z"
+  }
+]

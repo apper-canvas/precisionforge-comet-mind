@@ -1,0 +1,87 @@
+[
+  {
+    "Id": 1,
+    "name": "Precision CNC Machined Parts",
+    "category": "CNC Machining",
+    "description": "High-precision custom machined components for aerospace, automotive, and industrial applications. Manufactured to exact specifications using state-of-the-art CNC equipment.",
+    "specifications": {
+      "tolerance": "±0.0001\"",
+      "materials": ["Aluminum", "Steel", "Titanium", "Stainless Steel"],
+      "maxSize": "24\" x 24\" x 12\"",
+      "finishes": ["Anodized", "Powder Coated", "Chrome Plated"]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
+    ],
+    "materials": ["Aluminum", "Steel", "Titanium", "Stainless Steel"]
+  },
+  {
+    "Id": 2,
+    "name": "Custom Metal Fabrication",
+    "category": "Fabrication",
+    "description": "Complete metal fabrication services including cutting, welding, forming, and assembly. From prototypes to production runs.",
+    "specifications": {
+      "thickness": "0.5mm - 25mm",
+      "materials": ["Steel", "Aluminum", "Stainless Steel", "Copper"],
+      "processes": ["Laser Cutting", "Plasma", "Waterjet", "TIG/MIG Welding"],
+      "maxSize": "144\" x 60\""
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800"
+    ],
+    "materials": ["Steel", "Aluminum", "Stainless Steel", "Copper"]
+  },
+  {
+    "Id": 3,
+    "name": "Injection Molded Components",
+    "category": "Injection Molding",
+    "description": "High-volume plastic injection molding for consumer products, automotive components, and industrial applications.",
+    "specifications": {
+      "shotSize": "1oz - 50oz",
+      "materials": ["ABS", "PC", "Nylon", "PEEK", "POM"],
+      "moldSize": "Up to 36\" x 36\"",
+      "cavities": "1-32 cavity molds"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800",
+      "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800"
+    ],
+    "materials": ["ABS", "PC", "Nylon", "PEEK", "POM"]
+  },
+  {
+    "Id": 4,
+    "name": "Sheet Metal Stampings",
+    "category": "Stamping",
+    "description": "Progressive die stampings for high-volume production. Expertise in complex geometries and tight tolerances.",
+    "specifications": {
+      "thickness": "0.3mm - 6mm",
+      "materials": ["Cold Rolled Steel", "Stainless Steel", "Aluminum", "Brass"],
+      "pressForce": "Up to 400 tons",
+      "tolerance": "±0.05mm"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800"
+    ],
+    "materials": ["Cold Rolled Steel", "Stainless Steel", "Aluminum", "Brass"]
+  },
+  {
+    "Id": 5,
+    "name": "Die Cast Components",
+    "category": "Die Casting",
+    "description": "High-pressure die casting for complex metal parts with excellent surface finish and dimensional accuracy.",
+    "specifications": {
+      "materials": ["Aluminum", "Zinc", "Magnesium"],
+      "wallThickness": "0.6mm - 6mm",
+      "maxWeight": "10kg",
+      "finishes": ["As-cast", "Machined", "Powder Coated", "Anodized"]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
+    ],
+    "materials": ["Aluminum", "Zinc", "Magnesium"]
+  }
+]
